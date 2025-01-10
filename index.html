@@ -6,47 +6,159 @@
     <title>Document</title>
 
 <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
     header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 10px;
+        margin: 20px;
         
     }
     
     nav a{
         text-decoration: none;
-        font-size: large;
+        
     }
     main{
-        display: flex;
+        display: block;
         justify-content: center;
         text-align: center;
         align-items: center;
-        border: 1px solid;
+        
         min-height: 20vh;
+        margin-top: 80px;
     }
-    
+    main p{
+        text-align: center;
+        font-size: small;
+        color: grey;
+    }
+    h1{
+        font-family: cursive;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    h4{
+        margin-left: 20px;
+        font-family: cursive;
+    }
+    .sections-container{
+        display: flex;
+        
+    }
+    section{
+        flex: 10;
+        border: 1px solid;
+        border-radius: 5px;
+        min-height: 20vh;
+        margin-right: 10px;
+        
+    }
+    .projects ul{
+        padding: 0;
+        margin: 0;
+    }
+    .projects ul li{
+        border-bottom: 1px solid;
+        padding: 10px;
+    }
+    .projects ul li:last-child {
+        border-bottom: none;
+    }
+    .work ul{
+        padding: 0;
+        margin: 0;
+    }
+    .work ul li{
+        border-bottom: 1px solid;
+        padding: 10px;
+    }
+    .work ul li strong{
+        font-family: cursive;
+    }
+    .educ ul{
+        list-style: disc;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .projects ul li, .work ul li, .educ ul li{
+        font-size: small;
+        
+    }
 </style>
     
 </head>
 
 <body>
     <header>
-       <nav class="Logo">
-        <a href="">Logo</a>
+        <nav class="Logo">
+            <a href="">Logo</a>
         </nav>
-    <nav class="navi">
-        <a href="">Home /</a>
-        <a href="">Projects /</a>
-        <a href="">Articles /</a>
-        <a href="">Contact</a>
-    </nav> 
+        <nav class="navi">
+            <a href="">Home /</a>
+            <a href="">Projects /</a>
+            <a href="">Articles /</a>
+            <a href="">Contact</a>
+        </nav> 
     </header>
 
     <main>
-        <h3>Frontend Developer</h3>
+        <h1>Frontend Developer</h2>
+        <p>html only with proper layout, no styling</p>
     </main>
+    <div class="sections-container">
+        <section class="projects">
+            <h4>Projects</h4>
+            <ul>
+                <li>HTML Only Portfolio</li>
+                <li>Calculator</li>
+                <li>Quiz App</li>
+                <li>Countdown Timer</li>
+                <li>Product Upcoming Page</li>
+            </ul>
+
+        </section>
+        <section class="work">
+            <h4>Work Experience</h4>
+            <ul>
+                <li>
+                    <strong>roadmap.sh</strong>  
+                    <br>
+                    Solved all the frontend projects
+                    <br><br>
+                    <a href="#">Visit my Profile</a>
+                </li>
+                <br>
+                <li>
+                    <strong>OpenSource Work</strong>
+                    <br>
+                    Contributed to 50 open-source projects. Made my own projects with 200 GitHub Stars.
+                    <br><br>
+                    <a href="#">Visit my GitHub Profile</a>
+                </li>
+            </ul>
+
+        </section>
+        <section class="educ">
+            <h4>Education</h4>
+            <p>Graduated with a 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+            <ul>
+                <li>Object-Oriented Programming</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Web Engineering</li>
+                <li>Artificial Intelligence</li>
+                <li>Human Computer Interaction</li>
+                <li>Computer Graphics</li>
+                <li>Database Management Systems</li>
+                <li>Distributed Database Systems</li>
+                <li>Discrete Mathematics</li>
+            </ul>
+
+        </section>
+    </div>
+    
     
 </body>
 </html>
