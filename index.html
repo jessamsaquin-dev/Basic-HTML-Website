@@ -19,6 +19,7 @@
     
     nav a{
         text-decoration: none;
+        color: black;
         
     }
     main{
@@ -34,6 +35,7 @@
         text-align: center;
         font-size: small;
         color: grey;
+        
     }
     h1{
         font-family: cursive;
@@ -44,17 +46,17 @@
         margin-left: 20px;
         font-family: cursive;
     }
+    
     .sections-container{
         display: flex;
         
     }
-    section{
+    section.projects, section.work, section.educ{
         flex: 10;
         border: 1px solid;
         border-radius: 5px;
         min-height: 20vh;
-        margin-right: 10px;
-        
+        margin-right: 10px; 
     }
     .projects ul{
         padding: 0;
@@ -77,15 +79,56 @@
     }
     .work ul li strong{
         font-family: cursive;
+    }.work ul li:last-child{
+        border-bottom: none;
     }
     .educ ul{
         list-style: disc;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .projects ul li, .work ul li, .educ ul li{
+        padding-left: 30px;
+        padding-right: 30px;
         font-size: small;
-        
+    }
+    .educ p{
+        font-size: small;
+        padding: 10px 10px 0px 10px;
+    }
+    
+    .projects ul li, .work ul li{
+        font-size: small;
+        list-style: none;
+    }   
+
+    .reviews{
+        display: flex;
+        padding: 0px 30px ;
+    }
+    section.rev1, section.rev2, section.rev3{
+        flex: 10;
+        border: 1px solid;
+        border-radius: 30px;
+        min-height: 20vh;
+        margin-right: 10px; 
+        padding: 10px;
+    }
+    .reviews p{
+        font-size: small;
+    }
+    .rev1 p:nth-of-type(2), .rev1 p:nth-of-type(3){
+        color: gray;
+        line-height: 0.3;
+    }
+    .rev2 p:nth-of-type(2), .rev2 p:nth-of-type(3){
+        color: gray;
+        line-height: 0.3;
+    }
+    .rev3 p:nth-of-type(2), .rev3 p:nth-of-type(3){
+        color: gray;
+        line-height: 0.3;
+    }
+    footer{
+        text-align: center;
+        margin-top: 50px;
+        font-family: cursive;
     }
 </style>
     
@@ -144,6 +187,7 @@
         <section class="educ">
             <h4>Education</h4>
             <p>Graduated with a 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+            <p>Courses I took:</p>
             <ul>
                 <li>Object-Oriented Programming</li>
                 <li>Data Structures and Algorithms</li>
@@ -158,7 +202,28 @@
 
         </section>
     </div>
+
+    <h4>Reviews from my Teachers</h4>
+    <div class="reviews">
+        <section class="rev1">
+            <p>John doe was a brilliant student; always stood out with his assignments.</p>
+            <p>Jane Doe</p>
+            <p>Assistant Proffesor</p>
+        </section>
+        <section class="rev2">
+            <p>John doe was a brilliant student; always stood out with his assignments.</p>
+            <p>Jane Doe</p>
+            <p>Assistant Proffesor</p>
+        </section>
+        <section class="rev3">
+            <p>John doe was a brilliant student; always stood out with his assignments.</p>
+            <p>Jane Doe</p>
+            <p>Assistant Proffesor</p>
+        </section>
+    </div>
     
-    
+    <Footer>
+        ©  All rights reserved 2025.
+    </Footer>
 </body>
 </html>
